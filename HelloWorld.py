@@ -11,20 +11,22 @@ proceed = input("\n\nShall we proceed? [Y/N]: ")
 
 if(proceed == "Y" or "y"):
     name = input("\nPlease enter your name here: ")
-    age = input("\nWhich year were you born in?: ")
-    age2 = int(current_year) - int(age)
-    if(int(age2) > 18):
-        print("\nHello " + name + ". It's nice to meet you, I see that you're older than 18 now, you're a grown-up!")
-    else:
-        print("\nHello " + name + ". It's nice to meet you, I see that you're a young lad, I'm a young one aswell, let's be friends :) ")
+    age1 = input("\nWhich year were you born in?: ")
+    age = int(current_year) - int(age)
+    print("Hello " + name + ". Pleasure to meet you!")
+    if(int(age) <= 13):
+        print("\nYou come under the category of PG-13, meaning - you need to have parental guidance for certain actions to be taken on the Internet.")
 
-    print("\nThanks for answering to me, have a good day ;)\n")
-    exit()
+    elif(int(age) >= 18):
+        print("\nYou're above 18, you're an adult now, be responsible and do not fall prey to your attractions unless they're worthy! :)")
+
+    else:
+        print("\nYou're in your Teen ages, be careful not to fall prey for any attractions you might come across.")
+
+        print("\nThanks for answering to me, have a good day ;)\n")
 
 elif(proceed == "N" or "n"):
     print("\n Ah! no big deal, Have a good day :)\n")
-    exit()
 
 else:
     print('Invalid Response, the program will be closed!')
-    exit()
