@@ -9,7 +9,7 @@ else:
 
 proceed = input("\n\nShall we proceed? [Y/N]: ")
 
-if(proceed == str('Y') or str('y')):
+if(proceed == "Y" or "y"):
     name = input("\nPlease enter your name here: ")
     age = input("\nWhich year were you born in?: ")
     age2 = int(current_year) - int(age)
@@ -19,6 +19,12 @@ if(proceed == str('Y') or str('y')):
         print("\nHello " + name + ". It's nice to meet you, I see that you're a young lad, I'm a young one aswell, let's be friends :) ")
 
     print("\nThanks for answering to me, have a good day ;)\n")
-else:
+    exit()
+
+elif(proceed == "N" or "n"):
     print("\n Ah! no big deal, Have a good day :)\n")
+    exit()
+
+else:
+    print('Invalid Response, the program will be closed!')
     exit()
