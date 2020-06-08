@@ -11,4 +11,4 @@ elif(int(age) >= 18):
     print("\nYou're above 18, you're an adult now, be responsible and do not fall prey to your attractions unless they're worthy! :)")
 
 else:
-    print("\nYou're in your Teen ages, becareful not to fall prey for any attractions you might come across.")
+    print("\nYou're in your Teen ages, be careful not to fall prey for any attractions you might come across.")
